@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Bariol-Regular';
+  src: url('Bariol-Regular.eot');
+  src: url('Bariol-Regular.woff2') format('woff2'),
+       url('Bariol-Regular.woff') format('woff'),
+       url('Bariol-Regular.ttf') format('truetype'),
+       url('Bariol-Regular.svg#Bariol-Regular') format('svg'),
+       url('Bariol-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,503 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+*{
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing:border-box;
+}
+img{
+  display: block;
+}
+*:before, *:after{ 
+  content: ''; 
+  display: table; 
+} 
+*:after{ 
+  clear:both; 
+}
+@font-face {
+  font-family: 'Bariol';
+  src: url('../fonts/Bariol/Bariol-Regular.eot');
+  src: url('../fonts/Bariol/Bariol-Regular.woff2') format('woff2'),
+       url('../fonts/Bariol/Bariol-Regular.woff') format('woff'),
+       url('../fonts/Bariol/Bariol-Regular.ttf') format('truetype'),
+       url('../fonts/Bariol/Bariol-Regular.svg#Bariol-Regular') format('svg'),
+       url('../fonts/Bariol/Bariol-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('../fonts/Mariad/MyriadPro-Semibold.eot');
+  src: url('../fonts/Mariad/MyriadPro-Semibold.woff2') format('woff2'),
+       url('../fonts/Mariad/MyriadPro-Semibold.woff') format('woff'),
+       url('../fonts/Mariad/MyriadPro-Semibold.ttf') format('truetype'),
+       url('../fonts/Mariad/MyriadPro-Semibold.svg#MyriadPro-Semibold') format('svg'),
+       url('../fonts/Mariad/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  min-width: 768px;
+}
+
+.container{
+  width: 57%;
+  margin: 0 auto;
+  position: relative;
+}
+.header{
+  background: red;
+}
+.logo{
+  float: left;
+}
+.nav__btn{
+  background-image: url(../image/nav-btn.png);
+  width: 30px;
+  height: 30px;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  position: relative;
+  margin-top: 15px;
+  float: right;
+  display: none;
+}
+.top{
+  /*background-image: url(../image/top-bg.png);*/
+  background: #f56262;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 25px 0 20px 0;
+}
+.top:before {
+  content:"";
+  position:absolute;
+  top:0;
+  right:0;
+  border-width:0 45px 45px 0;
+  border-style:solid;
+  border-color:#ff8c8c #eb4f4e;
+  border-bottom-left-radius: 10px;
+
+}
+.header__list{
+  float: right;
+  margin-top: 15px;
+  display: block;
+}
+.header__list_item{
+  float: left;
+  margin-right: 20px;
+}
+.header__list_item:last-child{
+  margin-right: 0;
+}
+.header__list_link{
+  text-decoration: none;
+  font: 16px Arial;
+  padding: 9px 13px;
+  color: #fff;
+  text-align: center;
+  display: block;
+  border-radius: 2px;
+}
+.header__list_link:hover{
+  background: #1f1f20;
+}
+.hero{
+  text-align: center;
+  background: #eb4f4e;
+  
+}
+.slide__title{
+  font:60px Bariol;
+  color: #fff;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  letter-spacing: 10px;
+  font-weight: bold;
+}
+.slide__desc{
+  font:20px Bariol;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.header__slider{
+  text-align: center;
+}
+.slider__item{
+  margin: 0 auto;
+}
+.slider__item_img{
+  width: 100%;
+}
+.merits{
+  background: #1f1f1f;
+}
+.main-title{
+  font:40px Bariol;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin: 30px 0 20px 0;
+}
+.main-desc{
+  font:20px Bariol;
+  font-weight: 400;
+  color: #d94948;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.merits-block{
+  width: 33.3%;
+  float: left;
+  padding: 0 35px;
+  text-align: center;
+}
+.row-merits{
+  margin: 0 -35px;
+}
+.merits-block__title{
+  font:24px Bariol;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin: 15px 0 15px 0;
+}
+.merits-block__desc{
+  font:14px Bariol;
+  font-weight: 400;
+  color: #d94948;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.merits-block__img{
+  margin: 0 auto;
+}
+.dark-color{
+  color: 232324;
+}
+.team{
+  background: #6cc372;
+  padding-bottom: 20px;
+}
+.team-wrap{
+  width: 25%;
+  float: left;
+  padding: 0 5px;
+  text-align: center;
+}
+.team-block{
+  background: #e5e5e5;
+  border-radius: 5px;
+  padding: 20px 9px 0 9px;
+
+}
+.team-block__title{
+  font:20px Bariol;
+  color: #6cc372;
+  font-weight: 400;
+  text-align: center;
+  margin: 20px 0 15px 0;
+}
+.team-block__button{
+  background: #61af66;
+  padding: 7px 0 7px 9px;
+  border-radius: 3px;
+  margin-bottom: 9px;
+  font:20px Bariol;
+  color: #fff;
+  font-weight: 400;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+.team-block__button_img{
+  float: left;
+  margin-right: 20px;
+}
+.portfolio{
+  background: #f0f0f0;
+  border-bottom: 1px solid #d8d8d8;
+}
+.portfolio-slider{
+  margin: 0 -20px;
+}
+.portfolio-slider__item{
+  width: 25%;
+  float: left;
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 25px;
+}
+.portfolio__item_title{
+  font-weight: 400;
+  font:16px Bariol;
+  color: #232324;
+  margin-top: 20px;
+}
+.price{
+  padding-top: 1px;
+}
+.price-block{
+  background: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+.price-wrap{
+  width: 32.9%;
+  display: inline-block;
+  padding: 0 10px;
+  position: relative;
+  bottom: 0;
+}
+.price-row{
+  margin: 0 -10px;
+  padding-top: 35px;
+}
+.price__title{
+  font:32px Bariol;
+  font-weight: 400;
+  color: #616161;
+  margin: 10px 0 15px 0;
+}
+.price__desc{
+  font:16px Bariol;
+  color: #eb4f4e;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.price__icon{
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  z-index: 100;
+}
+.price__list_item{
+  text-align: center;
+  margin-bottom: 1px;
+  border-bottom: 2px solid #e7e7e7;
+  background: #f0f0f0;
+  padding: 12px 0;
+  font:14px Bariol;
+  font-weight: 400;
+  color: #616161;
+}
+.padd-price{
+  padding-top: 0;
+}
+.price-count{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #616161;
+  padding: 0px 9px 5px 10px;
+}
+.price-count__btn{
+  float: right;
+  background: #fff;
+  border-radius: 3px;
+  font:16px Bariol;
+  color: #616161;
+  padding: 8px 12px 7px 12px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.price-count__text{
+  float: left;
+  font:25px MyriadPro;
+  color: #fff;
+
+}
+.price-count__text>span{
+  font-size: 52px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.price-count__text>sup{
+  float: left;
+  margin-top: 15px;
+  margin-right: 5px;
+}
+.price__footer{
+  font:16px Bariol;
+  color: #eb4f4e;
+  text-align: center;
+  margin: 25px 0;
+}
+.tweets{
+  background: #eb4f4e;
+  padding-bottom: 25px;
+}
+.tweets-item__img{
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.tweets-item__text{
+  font: 16px MyriadPro;
+  color: #fff;
+  font-style: italic;
+}
+.tweets-item__text_color{
+  display: inline-block;
+  color: #1f1f20;
+}
+footer{
+  position: relative;
+}
+.contact{
+  width: 36.5%;
+  margin: 0 auto;
+  background: #282828;
+  opacity: 0.9;
+  padding: 10px 0 20px 0;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+}
+.contact__title{
+  font:24px Bariol;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.contact__mail{
+  font: 16px MyriadPro;
+  color: #eb4f4e;
+  text-align: center;
+}
+.orange-color{
+  color: #eb4f4e;
+}
+.orange-bg{
+  background: #eb4f4e;
+}
+.green-color{
+  color: #61af66;
+}
+.gray-color{
+  color: #616161;
+}
+.dark-color{
+  color: #232324;
+}
+.header__slider .slick-next:before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-image: url(../image/arrow-next.png);
+  width: 38px;
+  height: 72px;
+}
+.header__slider .slick-prev:before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-image: url(../image/arrow-prev.png);
+  width: 38px;
+  height: 72px;
+}
+.header__slider .slick-prev{
+  left: -15%;
+}
+.header__slider .slick-next{
+  right: -13%;
+}
+.portfolio-slider .slick-next:before{
+  content: "";
+  background-image: url(../image/arrow-right.png);
+  width: 17px;
+  height: 25px;
+}
+.portfolio-slider .slick-prev:before{
+  content: "";
+  background-image: url(../image/arrow-left.png);
+  width: 17px;
+  height: 25px;
+ 
+}
+.portfolio-slider .slick-prev,
+.portfolio-slider .slick-next
+{
+   top:35%;
+}
+.tweets-slider .slick-prev:before, .tweets-slider .slick-next:before{
+  color:#232323;
+}
